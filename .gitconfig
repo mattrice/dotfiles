@@ -6,3 +6,7 @@
 	helper = cache
 [core]
 	editor = vim
+[merge]
+	tool = vimdiff
+[diff]
+	renameLimit = 5000

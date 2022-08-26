@@ -119,3 +119,12 @@ fi
 # Shorten path (e.g. /really/long/path/to/file -> ../to/file)
 PROMPT_DIRTRIM=2
 
+# WSL2 beeping - Ubuntu-style commands won't work
+# from: https://unix.stackexchange.com/a/624064/211200
+_beep () {
+  powershell.exe "[console]::beep($1,$2)"
+}
+
+alias bleep="_beep 1000 800"  # A strong bleep (for profanity)
+alias  beep="_beep 2000 300"  # Quick yet noticeable beep
+alias  blip="_beep 4000  80"  # A less distracting blip
