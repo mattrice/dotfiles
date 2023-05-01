@@ -13,7 +13,7 @@ set number          " show line numbers
 set scrolloff=10
 " use different color scheme when using vimdiff
 if &diff
-    colorscheme desert
+    colorscheme blue
 endif
 set tags=tags;/
 filetype indent on
